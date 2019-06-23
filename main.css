@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+/* font-family: 'Roboto Mono', monospace; */
+
+body {
+    background-color: #4b6890;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+div {
+    width: 600px;
+    margin: auto;
+    padding: 0 2em;
+}
+.btn {
+    padding: 1em;
+    border-style: none;
+    border-radius: 0.5em;
+    font-weight: 600;
+    font-size: 11px;
+    margin: 0 0.3em;
+    position: relative;
+    transition-duration: 0.1s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 2s
+}
+.btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 20px;
+}
+.largeText {
+    font-size: 20px
+}
+.mediumText {
+    font-size: 17px;
+}
+.smallText {
+    font-size: 14px;
+}
+#sub {
+    background-color: #ff7ca9;
+}
+#add {
+    background-color: cornflowerblue; /*#6e9ad2;*/
+}
+#get {
+    background-color: #f7db97;
+}
+#reset {
+    background-color: orange;/*#f42654;*/
+}
+#reveal {
+    background-color: #272f6d;
+    color: white;
+    border-radius: 0;
+    padding-left: 4em;
+    padding-right: 4em;
+    font-size: 14px;
+}
+.white {
+    color: white
+}
+.mustard {
+    color: #f1ec7f;
+}
+.red {
+    color: red;
+    background-color: azure;
+    font-family: 'Roboto Mono', monospace;
+    padding: 0.2em 0.5em;
+    border-radius: 0.2em;
+
+}
