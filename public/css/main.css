@@ -11,7 +11,7 @@ body {
     line-height: 1.5em;
 }
 div {
-    width: 600px;
+    width: 400px;
     margin: auto;
     padding: 0 2em;
 }
@@ -20,7 +20,8 @@ div {
     border-style: none;
     border-radius: 0.5em;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 32px;
+    /* font-size: 22px; */
     margin: 0 0.3em;
     position: relative;
     transition-duration: 0.1s;
@@ -47,46 +48,52 @@ div {
     transition: 0s
 }
 h1 {
-    font-size: 32px;
+    font-size: 42px;
+    /* font-size: 32px; */
     line-height: 1.8em;
 }
 h2 {
-    font-size: 30px;
+    font-size: 40px;
+    /* font-size: 30px; */
 }
 h3 {
-    font-size: 24px;
+    font-size: 34px;
+    /* font-size: 24px; */
 }
 h4 {
-    font-size: 20px;
+    font-size: 30px;
+    /* font-size: 20px; */
 }
 .largeText {
-    font-size: 28px
+    font-size: 38px;
+    /* font-size: 28px; */
 }
 .mediumText {
-    font-size: 24px;
+    font-size: 34px;
+    /* font-size: 24px; */
 }
 .smallText {
-    font-size: 20px;
+    font-size: 30px;
+    /* font-size: 20px; */
 }
 #sub {
     background-color: #ff7ca9;
 }
 #add {
-    background-color: cornflowerblue; /*#6e9ad2;*/
+    background-color: cornflowerblue;
 }
 #get {
     background-color: #f7db97;
 }
 #reset {
-    background-color: orange;/*#f42654;*/
+    background-color: orange;
 }
 #reveal {
     background-color: #272f6d;
     color: white;
-    border-radius: 0;
+    border-radius: 0.1em;
     padding-left: 4em;
     padding-right: 4em;
-    /* font-size: 14px; */
 }
 .white {
     color: white
