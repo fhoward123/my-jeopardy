@@ -11,7 +11,7 @@ body {
     line-height: 1.5em;
 }
 div {
-    width: 400px;
+    /* width: 400px; */
     margin: auto;
     padding: 0 2em;
 }
@@ -92,8 +92,8 @@ h4 {
     background-color: #272f6d;
     color: white;
     border-radius: 0.1em;
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
 }
 .white {
     color: white
