@@ -12,6 +12,8 @@ app.controller('JeopardyController', [ '$http', '$timeout', function($http, $tim
     this.score = 0;
     this.showAnswer = false;
     this.showAnsBtn = false;
+    this.showQuesBtn = true;
+    this.showAddSubBtns = false;
     this.showText = false;
     this.timeLimit = 20;
     this.counter = this.timeLimit;
@@ -52,6 +54,7 @@ app.controller('JeopardyController', [ '$http', '$timeout', function($http, $tim
             this.showAnsBtn = true;
             this.showAnswer = false;
             this.showText = true;
+            this.showQuesBtn = false;
         // Handles errors in case AJAX call failed
         }).catch( err => console.error('Catch: ', err ));
         this.countdown();
@@ -61,14 +64,19 @@ app.controller('JeopardyController', [ '$http', '$timeout', function($http, $tim
         this.decrementValue = 1;
         this.showAnswer = ! this.showAnswer;
         this.showAnsBtn = ! this.showAnsBtn;
+        this.showAddSubBtns = true;
     };
 
     this.addPoint = function() {
         this.score += this.value;
+        this.showQuesBtn = true;
+        this.showAddSubBtns = false;
     };
 
     this.subPoint = function() {
         this.score -= this.value;
+        this.showQuesBtn = true;
+        this.showAddSubBtns = false;
     }
 
     this.resetGame = function() {
@@ -81,5 +89,7 @@ app.controller('JeopardyController', [ '$http', '$timeout', function($http, $tim
         this.showAnswer = false;
         this.showAnsBtn = false;
         this.showText = false;
+        this.showQuesBtn = true;
+        this.showAddSubBtns = false;
     }
 }]);

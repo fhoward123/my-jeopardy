@@ -14,10 +14,10 @@
         <div>
             <h2><span class="mustard">Score: </span><span class="white largeText"> {{jepCtrlr.score}}</span></h2>
         </div>
-        <div ng-if="! jepCtrlr.showAnsBtn" class="mustard">
+        <!-- <div ng-if="! jepCtrlr.showAnsBtn" class="mustard">
             <h2>Let's play!</h2>
-        </div>
-        <div ng-if="! jepCtrlr.showAnsBtn">
+        </div> -->
+        <div ng-if="jepCtrlr.showQuesBtn">
             <button type="button" class="btn" id="get" name="button" ng-click="jepCtrlr.getQuestion()">Get Question</button>
         </div>
         <div ng-if="jepCtrlr.showText">
@@ -30,15 +30,21 @@
         <h4><span ng-if="jepCtrlr.showText" class="mustard">Answer: </span> <span class="white smallText">{{jepCtrlr.question}}</span></h4>
         <div ng-if="jepCtrlr.showAnsBtn">
             <!-- <timer interval="1000" countdown="15">{{countdown}}</timer> -->
+            <br>
             <span class="red largeText">{{jepCtrlr.counter}}</span>
         </div>
         <div ng-if="jepCtrlr.showAnswer">
             <h4><span class="mustard">Question: </span><span class="white smallText">Who/What is {{jepCtrlr.answer}}?</span></h4>
         </div>
         <br/>
-        <div ng-if="jepCtrlr.showAnswer">
+        <div ng-if="jepCtrlr.showAddSubBtns">
             <button type="button" class="btn" id="sub" name="button" ng-click="jepCtrlr.subPoint()">WRONG!</button>
             <button type="button" class="btn" id="add" name="button" ng-click="jepCtrlr.addPoint()">CORRECT</button>
+        </div>
+        <br>
+        <div ng-if="jepCtrlr.showAnswer">
+            <!-- <button type="button" class="btn" id="sub" name="button" ng-click="jepCtrlr.subPoint()">WRONG!</button>
+            <button type="button" class="btn" id="add" name="button" ng-click="jepCtrlr.addPoint()">CORRECT</button> -->
             <button type="button" class="btn" id="reset" name="button" ng-click="jepCtrlr.resetGame()">Restart Game</button>
         </div>
         <div ng-if="jepCtrlr.showAnsBtn">
