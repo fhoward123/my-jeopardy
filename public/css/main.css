@@ -8,6 +8,7 @@ body {
     display: block;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
 }
 div {
     width: 600px;
@@ -15,11 +16,11 @@ div {
     padding: 0 2em;
 }
 .btn {
-    padding: 1em;
+    padding: 0.5em;
     border-style: none;
     border-radius: 0.5em;
     font-weight: 600;
-    font-size: 11px;
+    font-size: 22px;
     margin: 0 0.3em;
     position: relative;
     transition-duration: 0.1s;
@@ -46,7 +47,7 @@ div {
     transition: 0s
 }
 h1 {
-    font-size: 40px;
+    font-size: 32px;
 }
 h2 {
     font-size: 30px;
@@ -58,13 +59,13 @@ h4 {
     font-size: 20px;
 }
 .largeText {
-    font-size: 20px
+    font-size: 28px
 }
 .mediumText {
-    font-size: 17px;
+    font-size: 24px;
 }
 .smallText {
-    font-size: 14px;
+    font-size: 20px;
 }
 #sub {
     background-color: #ff7ca9;
@@ -84,7 +85,7 @@ h4 {
     border-radius: 0;
     padding-left: 4em;
     padding-right: 4em;
-    font-size: 14px;
+    /* font-size: 14px; */
 }
 .white {
     color: white

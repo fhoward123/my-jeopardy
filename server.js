@@ -4,10 +4,11 @@ const PORT = process.env.PORT || 3000
 
 //Express listener
 app.listen(PORT, ()=> {
-    console.log('Forum App listening...');
+    console.log('Jeopardy listening...');
 });
 
-app.use(express.static('public'));      //make public folder available
+//make public folder available
+app.use(express.static('public'));
 
 //404 error
 app.get('*', (req, res) => {
