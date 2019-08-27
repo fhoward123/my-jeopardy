@@ -10,7 +10,7 @@
         <title>Jeopardy Quiz</title>
     </head>
     <body ng-controller="JeopardyController as jepCtrlr">
-        <h1 class="white">{{jepCtrlr.appName}}</h1>
+        <h1 class="violet">{{jepCtrlr.appName}}</h1>
         <div>
             <h2><span class="mustard">Score: </span><span class="white largeText"> {{jepCtrlr.score}}</span></h2>
         </div>
@@ -20,6 +20,7 @@
         <div ng-if="jepCtrlr.showQuesBtn">
             <button type="button" class="btn" id="get" name="button" ng-click="jepCtrlr.getQuestion()">Get Question</button>
         </div>
+        <br>
         <div ng-if="jepCtrlr.showText">
             <h3 class="mustard">Category: <span class="white mediumText">{{jepCtrlr.category}}</span></h3>
             <h4 class="mustard">Points: <span class="white smallText">{{jepCtrlr.value}}</span></h4>
